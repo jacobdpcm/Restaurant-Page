@@ -2,10 +2,20 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    index: './src/index.js',
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
   },
   mode: 'development',
   devtool: 'inline-source-map',
@@ -19,7 +29,4 @@ module.exports = {
       title: 'Development',
     }),
   ],
-  optimization: {
-    runtimeChunk: 'single',
-  },
 };
