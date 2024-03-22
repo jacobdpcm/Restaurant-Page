@@ -15,15 +15,38 @@ header {
     background-color: aqua;
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    align-items: center;
+    gap: 2rem;
 }
 
 header button {
-    width: 5rem;
+    width: 10rem;
 }
 
-#content {
+#content{
     background-color: bisque;
+    display: flex;
+    justify-content: center;
+}
+
+#content .homewrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50rem;
+
+}
+
+.homewrapper img {
+    width: 400px;
+    height: auto;
+}
+
+.homepara {
+    text-align: center;
+    font-size: 18pt;
+    width: 40rem;
 }
 
 .footer {
