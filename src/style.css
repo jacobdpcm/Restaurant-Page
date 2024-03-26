@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: aqua;
+    background-color: rgb(12, 118, 118);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +24,7 @@ header button {
 }
 
 #content{
-    background-color: bisque;
+    background-color: rgb(173, 134, 85);
     display: flex;
     justify-content: center;
 }
@@ -41,6 +41,8 @@ header button {
 .homewrapper img {
     width: 400px;
     height: auto;
+
+    
 }
 
 .homepara {
@@ -49,6 +51,61 @@ header button {
     width: 40rem;
 }
 
+.menuWrapper {
+    padding: 2rem;
+    width: 1000px;
+}
+
+.menuTitle {
+    font-size: 40pt;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.menuItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: 150px;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.menuItems .item {
+    border: 5px solid black;
+    border-radius: 10px;
+    background-color: rgb(237, 206, 166);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.contactWrapper {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contactHeader {
+    font-size: 32pt;
+    width: 60rem;
+}
+
+.contactInfo {
+    font-size: 20pt;
+    padding: 2rem;
+    border: solid 5px black;
+    border-radius: 10px;
+    background-color: blanchedalmond;
+}
+
 .footer {
-    background-color: brown;
+    background-color: rgb(101, 23, 23);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
